@@ -1,37 +1,22 @@
 ---
-layout: default
-title: Home
+layout: home
+paginate: true
+alt_title: "Basically Basic"
+sub_title: "Your new default Jekyll theme"
+image: /assets/images/amine-ounnas-180287.jpg
+introduction: |
+  Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
+
+  - Clean responsive design with six customizable skins
+  - Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
+  - About page layout
+  - Disqus Comments and Google Analytics support
+  - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
+actions:
+  - label: "Get Started"
+    icon: github
+    url: "https://github.com/mmistakes/jekyll-theme-basically-basic"
+  - label: "Download"
+    icon: download
+    url: "https://github.com/mmistakes/jekyll-theme-basically-basic/archive/master.zip"
 ---
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
