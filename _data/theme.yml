@@ -23,6 +23,7 @@ t:
   of: "of"
   min_read: "min read"
   present: "Present"
+  skin: night
 
 # Google Fonts
 google_fonts:
@@ -34,6 +35,4 @@ google_fonts:
 # pages that have a `title`. Add raw page paths in the order you'd like.
 
 navigation_pages:
-  - about.md
-  - cv.md
-  - post.md
+  - hello.md
